@@ -1,6 +1,6 @@
 # Journal 
 Overall goal: 
-  * use SI3 with ABL1D
+  * use NEMO+SI3 coupled to ABL1D in a realistic arctic configuration,
   * investigate interactions ABL - sea ice from the point of view of sea ice (i.e. study the feedbacks on the ice from an interative ABL) with a BBM rheology.
 
 ## 2023-02-10
