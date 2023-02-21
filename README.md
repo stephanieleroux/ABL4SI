@@ -1,7 +1,7 @@
-# Journal 
+# My journal 
 
 ## 2023-02-10
-* Some [notes about the existing bibliography](https://github.com/stephanieleroux/SEA-ICE-notes/blob/main/biblio-ABL-interaction.md) on related topics.
+* My [notes about the existing bibliography](https://github.com/stephanieleroux/SEA-ICE-notes/blob/main/biblio-ABL-interaction.md) on related topics.
 
 ## 2023-02-01
 * First meeting with FL, GS, LB, PR and SL.
