@@ -2,7 +2,7 @@
 
 ## 2023-04-05
 * Starting with the ORCA2-ABL1D  NEMO reference config on JeanZay@IDRIS.
-* My step-bu-step technical notes [here](https://github.com/stephanieleroux/ABL4SI/blob/main/DOCS/ORCA2-ABL1D_NEMO-REF-CONFIG_technotes.md).
+* My step-by-step technical notes [here](https://github.com/stephanieleroux/ABL4SI/blob/main/DOCS/ORCA2-ABL1D_NEMO-REF-CONFIG_technotes.md).
 
 ## 2023-02-10
 * My [notes about the existing bibliography](https://github.com/stephanieleroux/SEA-ICE-notes/blob/main/biblio-ABL-interaction.md) on related topics.
