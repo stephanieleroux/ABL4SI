@@ -1,7 +1,7 @@
 # ORCA2-ABL1D NEMO reference config on JeanZay@IDRIS
 My step-by-step technical notes on running the ORCA2-ABL1D NEMO reference config on JeanZay@IDRIS.
 
-_Last update: 2023-04-05_
+_Last update: 2023-04-06_
 
 ## Install xios
 
@@ -59,4 +59,4 @@ cd EXP00
 ```
 
 _Latest status (2023-04-06):_
-Input files from `ORCA2_ABL_v4.2.0.tar.gz` do not seem to match with files needed by the namelist shared with the reference config. Question asked to FL and GS.
+Input files from `ORCA2_ABL_v4.2.0.tar.gz` do not seem to match with files needed by the namelist shared with the reference config `ORCA2_ICE_ABL`. Question asked to FL and GS.
