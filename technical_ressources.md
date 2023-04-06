@@ -1,3 +1,6 @@
+* From SLX (2023-04-06):
+> My [step-by-step technical notes on running ORCA2_ICE_ABL reference config (NEMO4.2)](https://github.com/stephanieleroux/ABL4SI/blob/main/DOCS/ORCA2-ABL1D_NEMO-REF-CONFIG_technotes.md) 
+
 * From AA (2023-04-05):
 > Tutorial to run a NEMO reference config: https://zenodo.org/record/6817000#.ZC0pLvc69WJ
 
