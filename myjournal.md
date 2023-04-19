@@ -1,5 +1,8 @@
 # My journal 
 
+## 2023-04-19
+* Q&A by email with GS about  ORCA2 config with ABL.
+
 ## 2023-04-05
 * Starting with the ORCA2_ICE_ABL  NEMO4.2 reference config on JeanZay@IDRIS.
 * My step-by-step technical notes [here](https://github.com/stephanieleroux/ABL4SI/blob/main/DOCS/ORCA2-ABL1D_NEMO-REF-CONFIG_technotes.md).
