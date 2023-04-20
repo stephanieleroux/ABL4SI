@@ -29,7 +29,8 @@ cp arch/CNRS/arch-X64_JEANZAY.fcm arch/CNRS/arch-X64_JEANZAY_slx.fcm
 
 vi arch/CNRS/arch-X64_JEANZAY_slx.fcm 
 
-# edit: %XIOS_HOME           /gpfswork/rech/cli/regi915/DEV/xios-2.5@2430
+# edit: %XIOS_HOME            /gpfswork/rech/cli/rote001/DEV/xios_trunk_2430
+# does nt work yet /gpfswork/rech/cli/regi915/DEV/xios-2.5@2430 so i use xios from AA.
 ```
 
 * Compile:
