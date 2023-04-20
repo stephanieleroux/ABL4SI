@@ -35,7 +35,7 @@ vi arch/CNRS/arch-X64_JEANZAY_slx.fcm
 * Compile:
 
 ```
-./makenemo -m ‘X64_JEANZAY_slx’ -r ORCA2_ICE_PISCES -n ‘ORCA2_ABL-JZSLX.02’ -j 8
+./makenemo -m X64_JEANZAY_slx -r ORCA2_ICE_PISCES -n ORCA2_ABL-JZSLX.02 -j 8
 ```
 
 ## Prepare first run:
