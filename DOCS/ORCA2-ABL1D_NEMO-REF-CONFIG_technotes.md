@@ -14,7 +14,7 @@ cd xios-2.5@2430
 ```
 
 ## Get NEMO4.2 and compile
-* Get:
+* Get release 4.2.0:
 
 ```
 cd /gpfswork/rech/cli/regi915/CONFIGS/CONFIG_ORCA2_ICE/
@@ -37,6 +37,7 @@ vi arch/CNRS/arch-X64_JEANZAY_slx.fcm
 ```
 ./makenemo -m X64_JEANZAY_slx -r ORCA2_ICE_PISCES -n ORCA2_ABL-JZSLX.02 -j 8
 ```
+_Note: building here an executable from the reference config ORCA2_ICE_PISCES which includes all these sub-components:  OCE TOP ICE NST ABL. Should not use the reference config ORCA2_ICE_ABL as it is not an official ref config._
 
 ## Prepare first run:
 * get input files:
