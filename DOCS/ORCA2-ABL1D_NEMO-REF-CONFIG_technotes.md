@@ -61,6 +61,40 @@ cp -r EXP00/ EXPREF
 cd EXP00
 ```
 
+* Edit namelists to mimic sette script `/sette/sette_reference-configurations.sh` for ORCA2_ICE_PISCES config:
+
+```
+    NPROC=32
+    set_namelist namelist_cfg nn_it000 1
+    set_namelist namelist_cfg nn_itend 992
+    set_namelist namelist_cfg jpni 4
+    set_namelist namelist_cfg jpnj 8
+    set_namelist namelist_cfg sn_cfctl%l_runstat .true.
+    set_namelist namelist_cfg sn_cfctl%l_trcstat .true.
+    set_namelist namelist_cfg ln_wave .true.
+    set_namelist namelist_cfg ln_cdgw .false.
+    set_namelist namelist_cfg ln_sdw  .true.
+    set_namelist namelist_cfg ln_stcor .true.
+
+    set_namelist_opt namelist_cfg ln_icebergs ${USING_ICEBERGS} .true. .false.
+    set_namelist_opt namelist_cfg nn_hls ${USING_EXTRA_HALO} 2 1
+    set_namelist_opt namelist_cfg nn_comm ${USING_COLLECTIVES} 2 1
+    set_namelist_opt namelist_cfg ln_nnogather ${USING_NOGATHER} .true. .false.
+    set_namelist_opt namelist_cfg ln_tile ${USING_TILING} .true. .false.
+  
+    set_namelist namelist_top_cfg ln_trcdta .false.
+    set_namelist namelist_top_cfg ln_trcbc  .false.
+    # put ln_ironsed, ln_hydrofe to false
+    # if not you need input files, and for tests is not necessary
+    set_namelist namelist_pisces_cfg ln_varpar .false.
+    set_namelist namelist_pisces_cfg ln_ironsed .false.
+    set_namelist namelist_pisces_cfg ln_ironice .false.
+    set_namelist namelist_pisces_cfg ln_hydrofe .false.
+    # put ln_pisdmp to false : no restoring to global mean value
+    set_namelist namelist_pisces_cfg ln_pisdmp .false.
+    set_namelist_opt namelist_cfg ln_timing ${USING_TIMING} .true. .false.
+ ```
+ 
 _Latest status (2023-04-06):_
 GS said ORCA2_ICE_ABL is not an official reference config. Should use ORCA2_ICE_PISCES instead (which permits to activate ABL).
 
