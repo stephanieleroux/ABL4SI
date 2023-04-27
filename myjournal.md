@@ -1,5 +1,13 @@
 # My journal 
 
+## 2023-04-25/27
+* Paper reading about  ocean ABL, bulk formulations, and the ABL1D model (in particular: Brodeau et al 2017, Renault et al 2016, Samson 2020 EGU slides, Lemarié et al 2021).
+
+## 2023-04-21
+*  Q&A by email with GS about  SETTE and the tests related to switching on  ABL in ORCA2-ICE-PISCES reference config.
+* Success! The test with ORCA2-ICE-PISCES ref config with `ln_abl = .true.` ran successfully for 2 months.
+* Updated my step-by-step technical notes [here](https://github.com/stephanieleroux/ABL4SI/blob/main/DOCS/ORCA2-ABL1D_NEMO-REF-CONFIG_technotes.md).
+
 ## 2023-04-19
 * Q&A by email with GS about  ORCA2 config with ABL.
 
