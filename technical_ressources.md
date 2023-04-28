@@ -1,3 +1,6 @@
+* From SLX (2023-04-28):
+> Zenodo archive for the Lemarié et al paper: [https://zenodo.org/record/3904518#.ZEu8UHZBwa4](https://zenodo.org/record/3904518#.ZEu8UHZBwa4).
+
 * From SLX (2023-04-06):
 > My [step-by-step technical notes on running ORCA2_ICE_ABL reference config (NEMO4.2)](https://github.com/stephanieleroux/ABL4SI/blob/main/DOCS/ORCA2-ABL1D_NEMO-REF-CONFIG_technotes.md) 
 
