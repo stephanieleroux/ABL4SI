@@ -65,12 +65,13 @@ cd EXP00
 * Edit namelists to mimic sette script `/sette/sette_reference-configurations.sh` for ORCA2_ICE_PISCES config:
  
 ---
+Notes:
 
-_latest status (2023-04-21):_
+* _latest status (2023-04-21):_
 Success! ORCA2_ICE_PISCES  ran for 2 months with ABL switched on.
 
-_Older comment (2023-04-06):_
+* _Older comment (2023-04-06):_
 GS said ORCA2_ICE_ABL is not an official reference config. Should use ORCA2_ICE_PISCES instead (which permits to activate ABL).
 
-_Older comment (2023-04-06):_
+* _Older comment (2023-04-06):_
 Input files from `ORCA2_ABL_v4.2.0.tar.gz` do not seem to match with files needed by the namelist shared with the reference config `ORCA2_ICE_ABL`. Question asked to FL and GS.
