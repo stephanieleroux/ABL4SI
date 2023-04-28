@@ -12,7 +12,7 @@
 * Q&A by email with GS about  ORCA2 config with ABL.
 
 ## 2023-04-14
-* Asked reference to Einar about their in-house ABL model from Richard Davy. Got the reference of a paper and his thesis where the model is described (initially developed for the Martian atmosphere and dust).
+* Asked reference to Einar about their in-house ABL model from Richard Davy. Got the reference of a paper by Richard D. and also his thesis where the model is described (initially developed for the Martian atmosphere and dust).
 
 ## 2023-04-05
 * Starting with the ORCA2_ICE_ABL  NEMO4.2 reference config on JeanZay@IDRIS.
