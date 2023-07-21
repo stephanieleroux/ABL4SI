@@ -31,7 +31,7 @@ cd xios-2.5@2430
 cd /gpfswork/rech/cli/regi915/CONFIGS/CONFIG_ORCA2_ICE/
 
 # get branch main
-git clone  https://forge.nemo-ocean.eu/nemo/nemo.git ORCA2_ABL-JZSLX.02
+git clone  https://forge.nemo-ocean.eu/nemo/nemo.git ORCA2_ICE-JZSLX.03
 ```
 
 * Edit arch file:
@@ -48,7 +48,7 @@ vi arch/CNRS/arch-X64_JEANZAY_slx.fcm
 * Compile:
 
 ```
-./makenemo -m X64_JEANZAY_slx -r ORCA2_ICE_PISCES -n ORCA2_ABL-JZSLX.02 -j 8
+./makenemo -m X64_JEANZAY_slx -r ORCA2_ICE_PISCES -n ORCA2_ICE-JZSLX.03 -j 8
 ```
 _Note: building here an executable from the reference config ORCA2_ICE_PISCES which includes all these sub-components:  OCE TOP ICE NST ABL. Should not use the reference config ORCA2_ICE_ABL as it is not an official ref config._
 
