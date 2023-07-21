@@ -7,21 +7,13 @@ Et il faudra aussi que tu génères de nouveaux poids pour l'interp online, et �
 
 > Par contre, la résolution d'ERAI étant particulièrement faible au pôle nord à cause de la grille gaussienne réduite d'IFS, les gradients de pression vont être particulièrement bruités/moches. C'est ce point là qu'il faut surveiller avec attention et que je voudrais essayer d'améliorer, mais je n'ai pas encore trouver la bonne méthode et cela va nécessité un peu plus de boulot (c'est aussi vrai avec ERA5 dans une moindre mesure).
 
-> Pour lancer la simu ABL, voilà les tests nemo que tu pourrais faire avant:
-- lancer la simu en mode bulk mais en utilisant les forçages ABL (Nemo ne prendra que le 1er niveau vertical des fichiers): ça te donnera une simu de rèf
-- lancer une simu en mode ABL avec le nudging à 100%: tu devrais retomber sur les mêmes résultats que la simu bulk
-- enfin dans une 3ème simu, relâcher la relaxation et croiser les doigts :)
+> Pour lancer la simu ABL, voilà les tests nemo que tu pourrais faire avant: 1. lancer la simu en mode bulk mais en utilisant les forçages ABL (Nemo ne prendra que le 1er niveau vertical des fichiers): ça te donnera une simu de rèf, 2. lancer une simu en mode ABL avec le nudging à 100%: tu devrais retomber sur les mêmes résultats que la simu bulk, 3. enfin dans une 3ème simu, relâcher la relaxation et croiser les doigts :)
 
-> PS: En bonus, j'aimerai bien  comprendre un peu mieux en quoi consiste la chaine de traitement nécessaire pour créer ces fichiers de forçages... D'après les annexes du papier Lemarié et al 2021 je comprends qu'il y a plusieurs étapes:
-- tu récupères les forçage IFS sur les niveaux sigmas natifs, 
-- tu interpoles sur des niveaux d'altitude fixe,
-- tu appliques le filtre de Shapiro pour smoother spatialement en enlevant le bruit  le bruit <2dx
--  tu calcules le gradient de pression hotizontal et/ou le vent géostrophique.
-C'est bien ça?
+> Question de SLX:  j'aimerai bien  comprendre un peu mieux en quoi consiste la chaine de traitement nécessaire pour créer ces fichiers de forçages... D'après les annexes du papier Lemarié et al 2021 je comprends qu'il y a plusieurs étapes. 1. tu récupères les forçage IFS sur les niveaux sigmas natifs,  2. tu interpoles sur des niveaux d'altitude fixe, 3. tu appliques le filtre de Shapiro pour smoother spatialement en enlevant le bruit  le bruit <2dx 3.   tu calcules le gradient de pression hotizontal et/ou le vent géostrophique. C'est bien ça?
 
-> ton PS est presque bon:
-- On calcule les gradients de pression en 1er le long des niveaux verticaux d'IFS avant de les projeter sur l'horizontale pour justement éviter les erreurs liées à l'interpolation verticale. L'interp verticale intervient donc après le calcul des gradients.
-- Concernant le lissage/filtrage, l'idée est de retirer les ondes de Gibbs (artefacts liés aux erreurs de troncatures lors du passage du domaine spectral vers le domaine physique) et les petites échelles liées à des processus non-géostrophiques. Il peut également y avoir des ruptures de la continuité de certaines variables près des côtes.
+> Réponse GS: presque bon:
+1.  On calcule les gradients de pression en 1er le long des niveaux verticaux d'IFS avant de les projeter sur l'horizontale pour justement éviter les erreurs liées à l'interpolation verticale. L'interp verticale intervient donc après le calcul des gradients.
+2. Concernant le lissage/filtrage, l'idée est de retirer les ondes de Gibbs (artefacts liés aux erreurs de troncatures lors du passage du domaine spectral vers le domaine physique) et les petites échelles liées à des processus non-géostrophiques. Il peut également y avoir des ruptures de la continuité de certaines variables près des côtes.
 Tout cela engendre localement des valeurs aberrantes lors du calcul des gradients qui peuvent ensuite polluer l'ABL et donc la réponse océanique.
 
 * From SLX (2023-04-28):
