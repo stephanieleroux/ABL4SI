@@ -1,3 +1,6 @@
+* From AA (2023-07-21):
+> To build weights for interpo [https://github.com/auraoupa/grand-challenge-adastra-ORCA36/tree/main/eORCA05/BUILD/WEIGHT](https://github.com/auraoupa/grand-challenge-adastra-ORCA36/tree/main/eORCA05/BUILD/WEIGHT).
+
 * From GS (2023-05-31):
 > Sur le ftp: il y a le domcfg de la grille verticale 50 niveaux de l'ABL et les différents fichiers de forçage 3D.
 Même si l'année ne correspond pas à votre période d'étude, ça fera le job pour faire juste des tests.
