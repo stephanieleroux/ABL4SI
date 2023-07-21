@@ -1,5 +1,8 @@
 # My journal 
 
+## 2023-05-31
+* Emails with GS. Got forcing files. Additional info about how these forcing files are made.
+
 ## 2023-04-25/27
 * Paper reading about  ocean ABL, bulk formulations, and the ABL1D model (in particular: Brodeau et al 2017, Renault et al 2016, Samson 2020 EGU slides, Lemarié et al 2021).
 
