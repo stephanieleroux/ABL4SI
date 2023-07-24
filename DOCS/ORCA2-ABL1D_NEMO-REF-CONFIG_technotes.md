@@ -4,7 +4,7 @@ My step-by-step technical notes on running the ORCA2-ABL1D NEMO reference config
 **Log:**
 
 * _Latest status (2023-07-24):_
-ORCA2_ICE_PISCES set to new release 4.2.1. Success with reference case.
+ORCA2_ICE_PISCES set to new release 4.2.1. Success with reference case ORCA2_ICE_PISCES (with PISCES removed at compilation, and ABL activated in the namelist).
 
 * _Older comment (2023-04-21):_
 Success! ORCA2_ICE_PISCES  ran for 2 months with ABL switched on.
