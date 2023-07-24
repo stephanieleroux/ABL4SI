@@ -82,5 +82,11 @@ cd EXP00
 ```
 
 * Edit namelists to mimic sette script `/sette/sette_reference-configurations.sh` for ORCA2_ICE_PISCES config. Get the namelists from `ORCA2_ICE-JZSLX.06` where it was done already.
+
+Or copy from disk:
+
+```
+cp  /gpfswork/rech/cli/regi915/CONFIGS/CONFIG_ORCA2_ICE/ORCA2_ICE-JZSLX.06/cfgs/ORCA2_ICE-JZSLX.06/EXP00/namelist_* .
+```
  
 
