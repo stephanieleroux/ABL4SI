@@ -33,7 +33,6 @@ cd xios-2.5@2430
 ```
 cd /gpfswork/rech/cli/regi915/CONFIGS/CONFIG_ORCA2_ICE/
 
-# get branch main
 git clone  https://forge.nemo-ocean.eu/nemo/nemo.git ORCA2_ICE-JZSLX.10
 ```
 
