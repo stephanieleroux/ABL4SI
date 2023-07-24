@@ -65,6 +65,12 @@ wget “https://gws-access.jasmin.ac.uk/public/nemo/sette_inputs/r4.2.0/ORCA2_AB
 wget "https://gws-access.jasmin.ac.uk/public/nemo/sette_inputs/r4.2.0/ORCA2_ICE_v4.2.0.tar.gz"
 ```
 
+Or copy from disk on JZ:
+```
+ln -sf /gpfswork/rech/cli/regi915/ORCA2/inputfiles/ORCA2_ICE_v4.2.0/* .
+ln -sf /gpfswork/rech/cli/regi915/ORCA2/inputfiles/ORCA2_ABL_v4.2.0/* .
+```
+
 
 * Prepare run directory:
 
