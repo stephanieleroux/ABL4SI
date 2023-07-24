@@ -1,3 +1,6 @@
+* From AA (2023-07-24):
+> Mail from NEMO system team about the release of 4.2.1.
+
 * From AA (2023-07-21):
 > To build weights for interpo [https://github.com/auraoupa/grand-challenge-adastra-ORCA36/tree/main/eORCA05/BUILD/WEIGHT](https://github.com/auraoupa/grand-challenge-adastra-ORCA36/tree/main/eORCA05/BUILD/WEIGHT).
 
