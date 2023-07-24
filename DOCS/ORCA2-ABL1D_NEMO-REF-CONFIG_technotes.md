@@ -89,4 +89,25 @@ Or copy from disk:
 cp  /gpfswork/rech/cli/regi915/CONFIGS/CONFIG_ORCA2_ICE/ORCA2_ICE-JZSLX.06/cfgs/ORCA2_ICE-JZSLX.06/EXP00/namelist_* .
 ```
  
+* run test simulation:
+```
+vi ./run_nemo.sh
 
+#!/bin/bash
+#SBATCH --nodes=1
+#SBATCH --ntasks=32
+#SBATCH --ntasks-per-node=32
+#SBATCH -J nemo_jean-zay
+#SBATCH -e nemo_jean-zay.e%j
+#SBATCH -o nemo_jean-zay.o%j
+#SBATCH -A cli@cpu
+#SBATCH --hint=nomultithread
+#SBATCH --time=0:30:00
+#SBATCH --dependency=singleton
+#SBATCH --exclusive
+#SBATCH --qos=qos_cpu-dev
+
+source ~/.bashrc
+
+srun -m cyclic -n 32 ./nemo
+```
