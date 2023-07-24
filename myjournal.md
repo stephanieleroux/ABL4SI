@@ -1,5 +1,8 @@
 # My journal 
 
+## 2023-07-21/24
+* Re-do tests with ORCA2. Objectives are to set version to 4.2.1 and to try the forcing files from GS.
+
 ## 2023-05-31
 * Emails with GS. Got forcing files. Additional info about how these forcing files are made.
 
