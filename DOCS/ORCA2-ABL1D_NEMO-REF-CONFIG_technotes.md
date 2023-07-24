@@ -3,7 +3,10 @@ My step-by-step technical notes on running the ORCA2-ABL1D NEMO reference config
 
 **Log:**
 
-* _Latest status (2023-04-21):_
+* _Latest status (2023-07-24):_
+ORCA2_ICE_PISCES set to new release 4.2.1. Success with reference case.
+
+* _Older comment (2023-04-21):_
 Success! ORCA2_ICE_PISCES  ran for 2 months with ABL switched on.
 
 * _Older comment (2023-04-06):_
@@ -25,13 +28,13 @@ cd xios-2.5@2430
 ```
 
 ## Get NEMO4.2 and compile
-* Get release 4.2.0:
+* Get release 4.2.1:
 
 ```
 cd /gpfswork/rech/cli/regi915/CONFIGS/CONFIG_ORCA2_ICE/
 
 # get branch main
-git clone  https://forge.nemo-ocean.eu/nemo/nemo.git ORCA2_ICE-JZSLX.03
+git clone  https://forge.nemo-ocean.eu/nemo/nemo.git ORCA2_ICE-JZSLX.10
 ```
 
 * Edit arch file:
@@ -48,9 +51,9 @@ vi arch/CNRS/arch-X64_JEANZAY_slx.fcm
 * Compile:
 
 ```
-./makenemo -m X64_JEANZAY_slx -r ORCA2_ICE_PISCES -n ORCA2_ICE-JZSLX.03 -j 8
+./makenemo -m X64_JEANZAY_slx -r ORCA2_ICE_PISCES del_key key_top -n ORCA2_ICE-JZSLX.10 -j 8
 ```
-_Note: building here an executable from the reference config ORCA2_ICE_PISCES which includes all these sub-components:  OCE TOP ICE NST ABL. Should not use the reference config ORCA2_ICE_ABL as it is not an official ref config._
+_Note: building here an executable from the reference config ORCA2_ICE_PISCES which includes all these sub-components:  OCE TOP ICE NST ABL. Should not use the reference config ORCA2_ICE_ABL as it is not an official ref config. The above line remove TOP (PISCES) from the compilation as we will not use it._
 
 ## Prepare first run:
 * get input files:
@@ -67,12 +70,12 @@ wget "https://gws-access.jasmin.ac.uk/public/nemo/sette_inputs/r4.2.0/ORCA2_ICE_
 * Prepare run directory:
 
 ```
-cd ./cfgs/ORCA2_ABL-JZSLX.02/
+cd ./cfgs/ORCA2_ABL-JZSLX.10/
 
 cp -r EXP00/ EXPREF
 cd EXP00
 ```
 
-* Edit namelists to mimic sette script `/sette/sette_reference-configurations.sh` for ORCA2_ICE_PISCES config:
+* Edit namelists to mimic sette script `/sette/sette_reference-configurations.sh` for ORCA2_ICE_PISCES config. Get the namelists from `ORCA2_ICE-JZSLX.06` where it was done already.
  
 
