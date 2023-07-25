@@ -1,7 +1,10 @@
 # My journal 
 
+## 2023-07-25
+* Got infos for NANUK4 config from LB. 
+
 ## 2023-07-21/24
-* Re-do tests with ORCA2. Objectives are to set version to 4.2.1 and to try the forcing files from GS.
+* Re-do tests with ORCA2. Set version to 4.2.1 and try with the forcing files from GS. Still not sure how to use surface pressure gradient file thought.
 
 ## 2023-05-31
 * Emails with GS. Got forcing files. Additional info about how these forcing files are made.
