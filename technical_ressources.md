@@ -1,3 +1,7 @@
+* From LB (2023-07-25):
+> LB nemo conf manager: https://github.com/brodeau/nemo_conf_manager
+> Forcing files and BDYs on Frazilo (/data/).
+
 * From AA (2023-07-24):
 > Mail from NEMO system team about the release of 4.2.1.
 
