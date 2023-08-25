@@ -1,5 +1,8 @@
 # My journal 
 
+## 2023-08-18-24
+* Worked on getting NANUK4 (NEMOv4.2.1) EVP to work on JZ. --> success. See notes.
+
 ## 2023-07-25
 * Got infos for NANUK4 config from LB. 
 
