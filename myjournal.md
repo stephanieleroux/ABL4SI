@@ -2,6 +2,10 @@
 
 ## 2023-08-18-25
 * First attempt at using GS's 3D forcing files with the NANUK4 config. Needed to compute new weights.
+* Works with `ln_abl=.false.` ! (`/gpfswork/rech/cli/regi915/DEVGIT/nemo_conf_manager/TEST_RUN/NANUK4/TEST_NANUK4_4.2/EVPSLX003`)
+* Still need to add in prep script that weight files and erai-3D files are linked too (and cheat for the 1996 year...)
+* Next step to try in `EVPSLX004`: `ln_abl=.true.` same as in namelist ORCA2.
+* List of questions to LB.
 
 ## 2023-08-18-24
 * Worked on getting NANUK4 (NEMOv4.2.1) EVP to work on JZ. --> first success ! (https://github.com/stephanieleroux/nemo_conf_manager/tree/master/TEST_RUN/NANUK4/TEST_NANUK4_4.2/EVPSLX).
