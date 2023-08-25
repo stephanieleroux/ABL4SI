@@ -1,13 +1,16 @@
 # My journal 
 
+## 2023-08-18-25
+* First attempt at using GS's 3D forcing files with the NANUK4 config. Needed to compute new weights.
+
 ## 2023-08-18-24
-* Worked on getting NANUK4 (NEMOv4.2.1) EVP to work on JZ. --> success. See notes.
+* Worked on getting NANUK4 (NEMOv4.2.1) EVP to work on JZ. --> first success ! (https://github.com/stephanieleroux/nemo_conf_manager/tree/master/TEST_RUN/NANUK4/TEST_NANUK4_4.2/EVPSLX).
 
 ## 2023-07-25
-* Got infos for NANUK4 config from LB. 
+* Got infos for NANUK4 config and nemo_conf_manager from LB. 
 
 ## 2023-07-21/24
-* Re-do tests with ORCA2. Set version to 4.2.1 and try with the forcing files from GS. Still not sure how to use surface pressure gradient file thought.
+* Re-do tests with ORCA2. Set version to 4.2.1 and try with the forcing files from GS (`/gpfswork/rech/cli/regi915/CONFIGS/CONFIG_ORCA2_ICE/nemo_4.2.1_test/cfgs/ORCA2_JZSLX.10`). Still not sure how to use surface pressure gradient file thought.
 
 ## 2023-05-31
 * Emails with GS. Got forcing files. Additional info about how these forcing files are made.
