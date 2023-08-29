@@ -10,9 +10,9 @@
 
 * From GS (2023-05-31) and Lemarié et al 2021: Steps of preprocessing to prepare the 3D atmos forcing files:
 > 1. Téléchargement des forçage IFS sur les niveaux sigmas natifs (Température potentielle, Humidité, U, V).
-2. On calcule les gradients de pression en premier le long des niveaux verticaux natifs  d’IFS avant de les projeter sur l’horizontale pour éviter les erreurs liées à l’interpolation verticale. L’interp verticale intervient donc après le calcul des gradients.
-3.  Interpolation sur des niveaux d’altitude fixe (cf le fichier ABLdomain.cfg)
-4. On applique un filtre de Shapiro pour lisser spatialement en enlevant  le bruit des petites échelles inférieures à 2*dx.  L’idée est de retirer les ondes de Gibbs (artefacts liés aux erreurs de troncatures lors du passage du domaine spectral vers le domaine physique) et les petites échelles liées à des processus non-géostrophiques. Il peut également y avoir des ruptures de la continuité de certaines variables près des côtes. Tout cela engendre localement des valeurs aberrantes lors du calcul des gradients qui peuvent ensuite polluer l’ABL et donc la réponse océanique.
+> 2. On calcule les gradients de pression en premier le long des niveaux verticaux natifs  d’IFS avant de les projeter sur l’horizontale pour éviter les erreurs liées à l’interpolation verticale. L’interp verticale intervient donc après le calcul des gradients.
+> 3.  Interpolation sur des niveaux d’altitude fixe (cf le fichier ABLdomain.cfg)
+> 4. On applique un filtre de Shapiro pour lisser spatialement en enlevant  le bruit des petites échelles inférieures à 2*dx.  L’idée est de retirer les ondes de Gibbs (artefacts liés aux erreurs de troncatures lors du passage du domaine spectral vers le domaine physique) et les petites échelles liées à des processus non-géostrophiques. Il peut également y avoir des ruptures de la continuité de certaines variables près des côtes. Tout cela engendre localement des valeurs aberrantes lors du calcul des gradients qui peuvent ensuite polluer l’ABL et donc la réponse océanique.
 
 
 * From GS (2023-05-31):
