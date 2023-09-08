@@ -1,5 +1,16 @@
 # My journal 
 
+
+## 2023-09-08
+* Updated NANUK4 with local source from LB for BBM rheology.
+* Adapted namelist and xml files.
+* first tests: BBM-bulk(std) and BBM-ABL.
+* Sent update email to GS and FL.
+  
+## 2023-09-01
+* Recompiled code of NANUK4 including ABL module
+* Run NANUK4 with ABL on and 2013 forcing from GS.
+
 ## 2023-08-29
 * Prep BDY and IC for 2012 and 2013 with LB on Frazilo.
 
