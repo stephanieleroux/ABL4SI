@@ -9,14 +9,14 @@
   
 ## 2023-09-01
 * Recompiled code of NANUK4 including ABL module
-* Run NANUK4 with ABL on and 2013 forcing from GS.
+* Run NANUK4 with ABL on and 2013 forcing from GS (`/TEST_NANUK4_4.2/EVPSLX006`)
 
 ## 2023-08-29
 * Prep BDY and IC for 2012 and 2013 with LB on Frazilo.
 
 ## 2023-08-18/25
 * First attempt at using GS's 3D forcing files with the NANUK4 config. New weights were computed (interp ERAi to NANUK4).
-* Works with `ln_abl=.false.` ! (`/gpfswork/rech/cli/regi915/DEVGIT/nemo_conf_manager/TEST_RUN/NANUK4/TEST_NANUK4_4.2/EVPSLX003`)
+* Works with `ln_abl=.false.` ! (`TEST_NANUK4_4.2/EVPSLX003`)
 * Still need to add some code in prep script so that the weight files and erai-3D files are linked too (and cheat for the 1996 year...)
 * Next step to try in `EVPSLX004`: `ln_abl=.true.` same as in namelist ORCA2.
 * List of questions to LB.
