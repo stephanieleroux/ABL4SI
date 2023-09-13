@@ -5,7 +5,7 @@
 * Updated NANUK4 with local source from LB for BBM rheology.
 * Adapted namelist and xml files.
 * first tests: BBM-bulk(std) and BBM-ABL.
-* Sent update email to GS and FL.
+* first notebooks on JZ.
   
 ## 2023-09-01
 * Recompiled code of NANUK4 including ABL module
