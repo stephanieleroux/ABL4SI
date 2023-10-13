@@ -1,10 +1,14 @@
 # My journal 
 
+## 2023-10-09/13
+* Studied the code in sbcblk.F90 and ablmod.F90 to understand how  the surface fluxes are dealt with when ABL is on compared to standard BLK. Understood better what edits are needed to make BBM work with ABL on. Interactions with LB. My notes [here]().
+* Email with summary and questions sent to GS and FL on 2023-10-13. See my notes [here](https://github.com/stephanieleroux/ABL4SI/blob/main/DOCS/2023-10-13-summary-first-tests.md).
+* Interactions with EO by email about the ABL1D model compared to their model. My notes [here](https://github.com/stephanieleroux/ABL4SI/blob/main/DOCS/2023-10-13_discussion-EO.md).
 
 ## 2023-09-08
 * Updated NANUK4 with local source from LB for BBM rheology.
 * Adapted namelist and xml files.
-* first tests: BBM-bulk(std) and BBM-ABL.
+* first tests: BBM-bulk(std) and BBM-ABL(strong nudging).
 * first notebooks on JZ.
   
 ## 2023-09-01
