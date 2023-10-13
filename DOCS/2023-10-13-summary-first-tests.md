@@ -19,7 +19,7 @@ Mes premiers tests sont tous avec la rhéologie standard de SI3 pour l’instant
 
 2. Ensuite j’ai testé une  simulation ABL avec nudging tel que conseillé dans le  papier Lemarié et al  2021 (temps de rappel du nudging en bas de l’ABL =  5 fois le pas de temps du modèle, qui est de  12 min = 720 s dans cette config), et le guidage du vent par le gradient de pression fourni par Guillaume. La solution de cette simulation avec ABL semble “raisonnable”, elle diffère un peu de la solution BLK sans être trop différente, et je vois que le vent turbulent semble se développer dans l’ABL, mais les différences de vent entre les simulations BLK et ABL restent relativement petites comparées au vent géostrophique. 
 
-→ _Cette simu semble OK au premier ordre. _
+→ _Cette simu semble OK au premier ordre._
 
 → _Comment faire un “sanity check” simple sur cette simu  pour vérifier que l’ABL est bien réglée, que je n’ai pas fait de grosse erreur dans la namelist, etc, avant de me lancer dans des analyses plus poussées de l’effet sur la glace?
 La seule idée qui me vient à l’esprit c’est de vérifier qu’on retrouve bien le  “thermal feedback” de  l’océan comme montré dans le papier de 2021. Mais pour ça, il me faut déjà des simulations de quelques années, puis filtrer la mésoéchelle et calculer la correlation entre anomalie de SST et anomalie de U10 ou du stress sur l’océan. C’est déjà un diagnostic élaboré, c’est un peu dommage de mettre tout ça en oeuvre juste pour vérifier que la config tient la route. Et puis comme je suis sur l’Artique au 1/4°, je n’ai que la partie Nord du Gulf Stream  dans le sud de mon domaine (qui descend à 40°N) qui sera à peu près eddy resolving et turbulente, et où on est sûr que le thermal feedback devrait se voir._
