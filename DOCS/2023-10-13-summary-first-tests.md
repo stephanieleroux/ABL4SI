@@ -1,5 +1,7 @@
 _Date: 2023-10-13_
 
+_Objet:_ Résumé et questions adressées à GS et FL.
+
 ## Configuration NEMO préparée:
 
 * Config régionale Arctique (NANUK4) au 1/4° en version 4.2.1.
