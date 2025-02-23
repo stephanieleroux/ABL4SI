@@ -35,7 +35,7 @@ The focus of these studies is on the response of the ABL to various sea ice boun
 ISOBAR18 observations. <i>(Click to read more)</i>.</summary>
 
 * WRF with one-way nesting and different ABL schemes.
-* https://doi.org/10.1175/JCLI-D-19-0252.1
+*  https://doi.org/10.1002/qj.4293
 </details>
 
 <!-- -------------- Paper ------------------ -->
